@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Crave Kitchen</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Sky Blue to Light Blue Gradient Background */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, black, #83a4a8);
+        }
+
+        /* Header Styling */
+        .header-box {
+            background: url('your-image-url-here.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .header-box img {
+            position: absolute;
+            top: 10px; /* Adjust as needed */
+            left: 10px; /* Adjust as needed */
+            width: 200px; /* Adjust size as needed */
+            height: auto;
+            border-radius: 50%; /* Optional: make the image circular */
+        }
+
+        .header-box h1 {
+            font-family: 'Lobster', cursive;
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Navigation Bar Styling */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
+            border-radius: 10px;
+        }
+
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #2a9d8f; /* Change color on hover */
+            transform: scale(1.1); /* Slightly enlarge */
+        }
+
+        /* Styling for the "Our Menu" heading */
+        .menu-heading {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            font-size: 2rem; /* Adjust size as needed */
+            color: rgb(241, 234, 234);
+            text-align: center;
+            border: 5px solid silver;
+            border-image: linear-gradient(45deg, rgb(51, 68, 68), green, darkgreen) 1;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        /* Styling for Location Section */
+        .location-section {
+            background-color: #f0f5f1;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+
+        .location-section h1 {
+            font-family: 'Poppins', sans-serif;
+            color: #3e7047;
+        }
+
+        .location-section p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .location-section .fa-map-marker-alt {
+            color: #3e7047;
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+
+        /* Styling for Contact Section */
+        .contact-section {
+            background-color: #eef7f3;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .contact-section h1 {
+            font-family: 'Poppins', sans-serif;
+            color: #2a9d8f;
+        }
+
+        .contact-section p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .contact-section .fa-phone,
+        .contact-section .fa-envelope {
+            color: #2a9d8f;
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+
+        /* Hover effect on contact info */
+        .contact-info:hover {
+            color: #2a9d8f;
+            transition: color 0.3s ease;
+        }
+
+        /* Chatbot positioning */
+        .chatbot {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            border: 1px solid #ccc; /* Optional: border for the iframe */
+            border-radius: 10px; /* Optional: rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: shadow for better visibility */
+            z-index: 1000; /* Ensure it's on top */
+        }
+
+        /* Image container for sliding gap */
+        .image-container {
+            width: 95%; /* Width of the container */
+            max-width: 1200px; /* Maximum width for larger screens */
+            margin: 0 auto; /* Center the container */
+            padding: 0 20px; /* Add padding for the gap on the sides */
+        }
+
+        .image-container img {
+            width: 100%; /* Make the image responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <div class="header-box">
+        <img src="D:\projects\food_chatbots\frontend\logo.jpg" alt="Restaurant Logo"> <!-- Update image path -->
+        <h1 class="restaurant-name">The Crave Kitchen</h1>
+        <!-- Navigation bar -->
+        <nav class="navbar">
+            <a href="#menu"><i class="fas fa-utensils"></i> MENU</a>
+            <a href="#location"><i class="fas fa-map-marker-alt"></i> LOCATION</a>
+            <a href="#contact"><i class="fas fa-envelope"></i> CONTACT US</a>
+        </nav>
+    </div>
+
+    <!-- Image that will display below the top box -->
+    <center>
+        <div class="image-container">
+            <img src="D:\projects\food_chatbots\frontend\Restaurant.jpg" alt="Restaurant Image">
+        </div>
+    </center>
+    
+    <!-- Menu Section -->
+    <div id="menu">
+        <center>
+            <h2 class="menu-heading"> Our Menu</h2> 
+            <img src="D:\projects\food_chatbots\frontend\menu_model.jpg" alt="Menu" style="width:200px; height:150px;">
+        </center>
+        <center>
+            <img src="D:\projects\food_chatbots\frontend\menu1.jpg" alt="Menu 1" style="width: 75%; height: auto;">
+        </center>
+        <center>
+            <img src="D:\projects\food_chatbots\frontend\menu2.jpg" alt="Menu 2" style="width: 75%; height: auto;">
+        </center>
+        <center>
+            <img src="D:\projects\food_chatbots\frontend\menu3.jpg" alt="Menu 3" style="width: 75%; height: auto;">
+        </center>
+    </div>
+
+    <!-- Location Section with icon -->
+    <div class="location-section" id="location">
+        <center>
+            <h1><i class="fas fa-map-marker-alt"></i> LOCATION</h1>
+            <p>654 Flavor Square, Cravetown, IL 60601</p>
+        </center>
+    </div>
+
+    <!-- Contact Us Section with icon -->
+    <div class="contact-section" id="contact">
+        <center>
+            <h1><i class="fas fa-phone"></i> CONTACT US</h1>
+            <p class="contact-info"><i class="fas fa-phone"></i> Call us at +91 8122063740</p>
+            <p class="contact-info"><i class="fas fa-envelope"></i> Email: CraveKitchen@Cravefood.com</p>
+        </center>
+    </div>
+
+    <!-- Chatbot iframe -->
+    <iframe class="chatbot" width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/2edaef95-1ad1-4220-becd-8aa9e2acecc0"></iframe>
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* Reset default margins and padding */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* Header box with gradient background */
+.header-box {
+    background: linear-gradient(90deg, #00b894, #55efc4); /* Green gradient */
+    height: 220px; /* Adjust height to fit the header and nav */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    position: relative;
+}
+
+/* Stylish Lobster font for restaurant name */
+.restaurant-name {
+    font-size: 3.5rem;
+    font-family: 'Lobster', cursive; /* Apply Lobster font */
+    color: rgb(74, 195, 98);
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 0;
+    position: relative;
+    top: 20px; /* Push the text towards the top of the box */
+}
+
+/* Navigation bar styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between links */
+    margin-top: 20px; /* Space below the "TastyTrek" heading */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 8px 15px;
+    background-color: rgba(0, 0, 0, 0.1); /* Slight background for better readability */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for navbar links */
+.navbar a:hover {
+    background-color: rgba(0, 0, 0, 0.3); /* Darken background on hover */
+}
+
+/* Full width image styling */
+img {
+    width: 80%; /* Adjusts the width to a more standard size */
+    height: 60vh; /* Height adjusted for a better viewport fit */
+    object-fit: cover; /* Keeps the image aspect ratio and crops it to fill */
+    display: block;
+    margin: 20px auto; /* Centers the image horizontally with margin */
+}
